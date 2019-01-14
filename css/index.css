@@ -356,8 +356,24 @@ section.containerA, section.containerC{
 	padding-top:20px;
 }
 
+@media(max-width:800px){
+    section.containerA, section.containerC{
+        font-size: 16px;
+
+    }
+}
+
 section.containerA h1{
 	font-size: 30px;
+}
+
+@media(max-width:800px){
+    section.containerA h1{
+        font-size: 22px;
+        justify-content: center;
+        align-items: center;
+        
+    }
 }
 
 section.containerB{
@@ -370,24 +386,44 @@ section.containerB{
 }
 
 div.box{
-	width:600px;
+	width:45%;
 	height: 300px;
 	padding:10px;
 	font-size:22px;
 	margin:10px;
 	border: 2px solid black;
 }
+
+@media(max-width:800px){
+    div.box{
+        height: 200px;
+        font-size:16px;
+    }
+}
+
 div.box p{
 	padding-bottom:40px ;
 }
+
+@media(max-width:800px){
+    div.box p{
+        padding: 0 0 0 0;
+    }
+}
+
 
 button{
     font-size: 18px;
     background-color: white;
     border:1px solid black;
     padding: 5px 35px;
-    
 }
+
+@media(max-width:800px){
+    button, {
+        padding:0 0 0 0 ;
+        font-size:10px;
+    }
 
 section.containerC{
 	display:flex;
