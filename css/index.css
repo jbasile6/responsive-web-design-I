@@ -118,17 +118,19 @@ div.header-content nav, header.services-header nav{
     div.header-content nav, header.services-header nav{
         display: flex;
         width:100%;
+        justify-content: center;
     }
 }
 
 @media(max-width:500px){
     div.header-content nav, header.services-header nav{
         display:flex;
-        flex-wrap:wrap;
+        flex-wrap:nowrap;
         justify-content: center;
         align-content: center;
         align-items: center;
-        border-top: 1px solid gray; 
+        border-top: 1px solid gray;
+        flex-direction: column; 
     }
 }
 
@@ -165,7 +167,6 @@ section.container1{
 	align-items: center;
 	justify-content: flex-end;
     margin: 50px;
-   
 }
 
 @media(max-width:800px){
